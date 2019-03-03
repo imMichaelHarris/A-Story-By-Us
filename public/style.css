@@ -1,0 +1,81 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Lora', serif;
+    background: #FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D7E1EC,#FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D7E1EC,#FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+}
+
+#title {
+    font-family: 'Gloria Hallelujah', cursive;
+    letter-spacing: 2px;
+    padding: .2em;
+    color: skyblue;
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-bottom: 1px solid lightgrey;
+}
+#phrase {
+    font-size: 2em;
+}
+.error {
+    color: red;
+    display: block;
+}
+#userInput {
+    margin-top: 100px;
+    padding: .8em 1.3em;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid lightgrey;
+    transition: border .3s ease-in;
+}
+#userInput:focus,
+.submitBtn:focus {
+    outline:none;
+}
+#userInput:focus {
+    border: 2px solid skyblue;
+}
+.submitBtn {
+    margin-top: .5em;
+    padding: .5em 2em;
+    font-size: 1em;
+    border-radius: 20px;
+    border-style: none;
+    background: skyblue;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.tip {
+    margin-top: 2em;
+    color: grey;
+    font-size: .9em;
+}
+.submitted {
+    color: red;
+    font-size: .8em;
+    font-weight: 300;
+}
+#topic {
+    margin-bottom: 1.5em;
+    font-size: 20px;
+    font-weight: 300;
+    color: grey;
+}
+@media (min-width: 900px){
+    #body {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lora" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="stories-icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Story By Us</title>
+</head>
+<body>
+    <div id="body">
+        <h1 id="title">A Story By . Us</h1>
+        <h1 id="topic">loading...</h1>
+        <div id="todayPhrase">
+            <p id="phrase">loading...</p>
+        </div>
+        <input type="text" id="userInput">
+        <span class="error"></span>
+
+        <button onclick="addPhrase()" class="submitBtn">Submit</button>
+        <div class="tip">Enter a word or short phrase to add to the topic to create a story.</div>
+        <div class="submitted"></div>
+
+
+
+  
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDCJu8N24oa-aWLUJKMBi45-vJu8-SOroI",
+    authDomain: "stories-942d5.firebaseapp.com",
+    databaseURL: "https://stories-942d5.firebaseio.com",
+    projectId: "stories-942d5",
+    storageBucket: "stories-942d5.appspot.com",
+    messagingSenderId: "396598356666"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

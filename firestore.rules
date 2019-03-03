@@ -1,0 +1,11 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{user} {
+      allow create: if !exists(/databases/$(database)/documents/users/$(user));
+	}
+
+    match /{document=**} {
+    	allow read, update;
+    }
+  }
+}
